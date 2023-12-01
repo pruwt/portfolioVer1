@@ -1,0 +1,78 @@
+/* github-style.css */
+
+#github-section {
+  background-color: #f4f4f4;
+  padding: 4vh 10rem;
+}
+
+.search-area {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+#username {
+  padding: 1rem;
+  font-size: 1rem;
+  border: 0.1rem solid rgb(163, 163, 163);
+  border-radius: 0.5rem;
+}
+
+#username:focus {
+  outline: none;
+  border-color: #3498db; /* Highlight on focus */
+}
+
+.git-btn {
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  cursor: pointer;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.git-btn:hover {
+  background-color: #2980b9; /* Darker shade on hover */
+}
+
+.output-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile {
+  margin: 2rem 0;
+  /* Add more styles for the profile container if needed */
+}
+
+.info {
+  margin: 2rem 0;
+  /* Add more styles for the info container if needed */
+}
+
+#loadMoreBtn {
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  cursor: pointer;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  margin-top: 2rem;
+}
+
+#loadMoreBtn:hover {
+  background-color: #2980b9; /* Darker shade on hover */
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+  #github-section {
+    padding: 4vh 2rem; /* Adjust padding for smaller screens */
+  }
+}
+

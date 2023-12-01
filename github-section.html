@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="mediaqueries.css">
+  <title>GitHub Section</title>
+</head>
+<body>
+  <nav id="pc-nav">
+    <div class="logo">Prudence Theuri</div>
+    <div>
+      <ul class="nav-links">
+        <li><a href="github-section.html">Git History</a></li>
+        <li><a href="index.html">Experience</a></li>
+        <li><a href="index.html">Projects</a></li>
+        <li><a href="index.html">Contact</a></li>
+      </ul>
+    </div>
+    <button id="darkModeToggle">Toggle Dark Mode</button>
+  </nav>
+  <nav id="ham-nav">
+    <div class="logo">Prudence Theuri</div>
+    <div class="ham-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="menu-links">
+        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+        <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+      </div>
+    </div>
+  </nav>
+  <section id="github-section">
+    <h1 class="title">Check out my GitHub Activity </h1>
+    <div class="container">
+        <div class="search-area">
+            <input type="text" id="username" placeholder="Enter GitHub Username" autocomplete="off">
+            <button onclick="getOverview();" class="git-btn">Get Overview</button>
+        </div>
+        <div class="output-container" id="output">
+            <div class="profile" id="profile"></div>
+            <div class="info" id="info"></div>
+            <button id="loadMoreBtn" onclick="loadMoreActivity();" class="git-btn">Load More Activity</button>
+        </div>
+    </div>
+</section>
+<script src="script.js"></script>
+</body>
+</html>
